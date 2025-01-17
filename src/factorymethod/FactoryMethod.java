@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package factorymethod;
 
-/**
- *
- * @author User
- */
+
 
 import java.util.Scanner;
 
@@ -59,15 +53,12 @@ public class FactoryMethod {
     
  
     
-    
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
         
-    Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+    Scanner myObj = new Scanner(System.in);  
     System.out.println("what would you like to order? available we have we have pizza and burger");
-       String ordered = myObj.nextLine();  // Read user input
+       String ordered = myObj.nextLine();  
      
          Food food1 =FoodFactory.getFood(ordered);
          food1.order();
